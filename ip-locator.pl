@@ -68,27 +68,27 @@ my $info = decode_json($json);
 # INFOS OF JSON API ...
  
 print color 'bold bright_white';
-print "  [!] IP: ", $info->{'query'}, "\n";
+print "     [!] IP: ", $info->{'query'}, "\n";
 print color 'bold bright_red';
-print "------------------------------------\n"; 
+print "-----------------------------------------\n"; 
 print color 'bold bright_green';
-print "  [+] ORG: ", $info->{'as'}, "\n";
-print "  [+] ISP: ", $info->{'isp'}, "\n";
-print "  [+] Country: ", $info->{'country'}," - ", $info->{'countryCode'}, "\n";
-print "  [+] City: ", $info->{'city'}, "\n";
-print "  [+] Region: ", $info->{'regionName'}, " - " , $info->{'region'}, "\n";
+print "     [+] ORG: ", $info->{'as'}, "\n";
+print "     [+] ISP: ", $info->{'isp'}, "\n";
+print "     [+] Country: ", $info->{'country'}," - ", $info->{'countryCode'}, "\n";
+print "     [+] Region: ", $info->{'regionName'}, " - " , $info->{'region'}, "\n";
+print "     [+] City: ", $info->{'city'}, "\n";
 print color 'red';
-print q{  [!] Location: Might not be accurate 
+print q{     [!] Location: Might not be accurate 
 }; "\n";
 print color 'bold bright_blue';
-print "  [+] Geo: ", "Lat: " , $info->{'lat'}, " - Long: ", $info->{'lon'}, "\n";
-print "  [+] Geo: ", "Latitude: " , $info->{'lat'}, " - Long: ", $info->{'lat'}, "\n";
+print "     [+] Geo: ", "Latitude: " , $info->{'lat'}, " - Longitude: ", $info->{'lon'}, "\n";
+print "     [+] Geolocation: ", "Lat: " , $info->{'lat'}, " - Lat: ", $info->{'lat'}, "\n";
 print color 'bold bright_green';
-print "  [+] Time: ", "timezone: " , $info->{'timezone'}, " - Long: ", $info->{'timezone'}, "\n";
-print "  [+] As number/name: ", "as: " , $info->{'as'}, " - Long: ", $info->{'as'}, "\n";
-print "  [+] ORG: ", $info->{'as'}, "\n";
-print "  [+] Country code: ", $info->{'countryCode'}, "\n";
-print color 'dark bright_red';
-print "  [+] Status: ", $info->{'status'}, "\n"; 
+print "     [+] Timezone: ", "timezone: " , $info->{'timezone'}, " - Long: ", $info->{'timezone'}, "\n";
+print "     [+] As number/name: ", "as: " , $info->{'as'}, " - Long: ", $info->{'as'}, "\n";
+print "     [+] ORG name: ", $info->{'as'}, "\n";
+print "     [+] Country code: ", $info->{'countryCode'}, "\n";
+print color 'bold bright_red';
+print "     [+] Status: ", $info->{'status'}, "\n"; 
 print "\n";
 # EOF
