@@ -1,4 +1,4 @@
-# IP-Locator was made by Z hacker
+# IP-Locator
  retrieve informations about an ip adress or a hostname 
  This tool is scripted in perl as you can tell    -_-         
  you can help us by subscribing to our youtube channel :. https://goo.gl/83QFyp .:
